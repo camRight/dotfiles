@@ -1,0 +1,7 @@
+last log -1 HEAD
+co checkout
+br branch
+ci commit
+st status
+unstage reset HEAD --
+branches for-each-ref --sort=-committerdate --format="%(color:blue)%(authordate:relative) %(color:red)%(authorname)    %(color:white)%(color:bold)%(refname:short)" refs/remotes
